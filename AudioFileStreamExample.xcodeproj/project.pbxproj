@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7E58A760D6523D6000BB1F0 = {
+			isa = PBXBuildFile;
+			fileRef = F7E58A570D65234B000BB1F0;
+		};
+		F7E58A7A0D6523EC000BB1F0 = {
+			isa = PBXBuildFile;
+			fileRef = F7E58A590D652361000BB1F0;
+		};
+		F7E58BF70D65241C000BB1F0 = {
+			isa = PBXBuildFile;
+			fileRef = F7E58BF60D65241C000BB1F0;
+		};
+		F7E58C0F0D65244F000BB1F0 = {
+			isa = PBXBuildFile;
+			fileRef = F7E58A5B0D65237A000BB1F0;
+		};
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F7E58A570D65234B000BB1F0 = {
+			isa = PBXFileReference;
+			fileEncoding = 4;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = afsclient.cpp;
+			sourceTree = "<group>";
+		};
+		F7E58A590D652361000BB1F0 = {
+			isa = PBXFileReference;
+			fileEncoding = 4;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = afsserver.cpp;
+			sourceTree = "<group>";
+		};
+		F7E58A5B0D65237A000BB1F0 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = AudioToolbox.framework;
+			path = /System/Library/Frameworks/AudioToolbox.framework;
+			sourceTree = "<absolute>";
+		};
+		F7E58A6B0D6523AF000BB1F0 = {
+			isa = PBXFileReference;
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			path = afsclient;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F7E58A720D6523BF000BB1F0 = {
+			isa = PBXFileReference;
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			path = afs_server;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F7E58BF60D65241C000BB1F0 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Carbon.framework;
+			path = /System/Library/Frameworks/Carbon.framework;
+			sourceTree = "<absolute>";
+		};
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7E58A690D6523AF000BB1F0 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E58C0F0D65244F000BB1F0,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E58A700D6523BF000BB1F0 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E58BF70D65241C000BB1F0,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07,
+				08FB779DFE84155DC02AAC07,
+				1A8B4A8EFE9D542A11CA2CBB,
+			);
+			name = AudioFileStreamExample;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 = {
+			isa = PBXGroup;
+			children = (
+				F7E58A570D65234B000BB1F0,
+				F7E58A590D652361000BB1F0,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 = {
+			isa = PBXGroup;
+			children = (
+				F7E58BF60D65241C000BB1F0,
+				F7E58A5B0D65237A000BB1F0,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A8B4A8EFE9D542A11CA2CBB = {
+			isa = PBXGroup;
+			children = (
+				F7E58A6B0D6523AF000BB1F0,
+				F7E58A720D6523BF000BB1F0,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7E58A6A0D6523AF000BB1F0 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E58A780D6523DF000BB1F0;
+			buildPhases = (
+				F7E58A680D6523AF000BB1F0,
+				F7E58A690D6523AF000BB1F0,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = afsclient;
+			productName = afsclient;
+			productReference = F7E58A6B0D6523AF000BB1F0;
+			productType = "com.apple.product-type.tool";
+		};
+		F7E58A710D6523BF000BB1F0 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E58A790D6523DF000BB1F0;
+			buildPhases = (
+				F7E58A6F0D6523BF000BB1F0,
+				F7E58A700D6523BF000BB1F0,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = afsserver;
+			productName = afs_server;
+			productReference = F7E58A720D6523BF000BB1F0;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB926208733DCF0010E9CD;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7E58A6A0D6523AF000BB1F0,
+				F7E58A710D6523BF000BB1F0,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7E58A680D6523AF000BB1F0 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E58A760D6523D6000BB1F0,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E58A6F0D6523BF000BB1F0 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E58A7A0D6523EC000BB1F0,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB926308733DCF0010E9CD = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Debug;
+		};
+		1DEB926408733DCF0010E9CD = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Release;
+		};
+		F7E58A6D0D6523AF000BB1F0 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = afsclient;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		F7E58A6E0D6523AF000BB1F0 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = afsclient;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		F7E58A740D6523C0000BB1F0 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = afs_server;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		F7E58A750D6523C0000BB1F0 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = afsserver;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB926208733DCF0010E9CD = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB926308733DCF0010E9CD,
+				1DEB926408733DCF0010E9CD,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F7E58A780D6523DF000BB1F0 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E58A6D0D6523AF000BB1F0,
+				F7E58A6E0D6523AF000BB1F0,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F7E58A790D6523DF000BB1F0 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E58A740D6523C0000BB1F0,
+				F7E58A750D6523C0000BB1F0,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07;
+}
